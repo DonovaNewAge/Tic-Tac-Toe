@@ -1,0 +1,50 @@
+header{
+    text-align: center;
+}
+
+.score-verti{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.score-hori{
+    display: flex;
+    flex-direction: row;
+}
+
+.score-hori h3{
+    margin: 0px 20px;
+    
+}
+
+.board{
+    /* border: 2px solid black; */
+    margin-left: 33.5%;
+    width: 33%;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 130px;
+
+}
+
+.row-1, .row-2{
+    border-bottom: 2px solid black;
+}
+
+.box{
+    width: 33.3%;
+    text-align: center;
+    font-size: 60pt;
+    padding-top: 20px;
+}
+
+.col-1, .col-2{
+    border-right: 2px solid black;
+}
+
