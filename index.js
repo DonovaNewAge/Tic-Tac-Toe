@@ -47,7 +47,7 @@ function winCondition(player){
             $("#p2-score").text(p2Score)
             alert("Point goes to Player 2")
         }     
-        clearButton()
+       clearButton()
     }
     else if(turnCounter===9){
         tie = tie + 1;
@@ -59,12 +59,30 @@ function winCondition(player){
 
 function clearButton(){
 
-    turnTotal = 0;
-    whoseTurn = 1;
-    
+for(i = 1; i < 4; i++){
+    timer = (i+1)*1000
+    console.log(timer)
+    setTimeout(countdown("turn-count", 4-i), timer) 
+
+}
+
+    $("#turn-count").text("gay")
     $(".X").empty()
     $(".O").empty()
-    $(".X").removeClass(".X")
-    $(".O").removeClass(".O")
+    $(".X").removeClass("X")
+    $(".O").removeClass("O")
 
+
+    turnCounter = 0;
+    whoseTurn = 1;
+    $("#turn-count").text("P1")
+
+
+}
+
+
+function countdown(where, number){
+    console.log(where)
+    console.log(number)
+  document.getElementById(where).innerHTML = number;
 }
